@@ -352,7 +352,7 @@
              Un silenzio scolpito nella Majella. Sospeso tra terra e cielo, incastonato in una vertiginosa parete di roccia a 700 metri di altitudine.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up">
-                <a href="https://maps.app.goo.gl/HhFPRPvGD44qfvxZ9"  class="bg-amber-500 text-black px-10 py-4 rounded-full font-bold uppercase tracking-tighter hover:bg-amber-600 transition" target="_blank">il Percorso</a>
+                <a href="https://maps.app.goo.gl/nPev9vjj47Xe5Qje8"  class="bg-amber-500 text-black px-10 py-4 rounded-full font-bold uppercase tracking-tighter hover:bg-amber-600 transition" target="_blank">il Percorso</a>
 				<a href="https://sergioanello-del.github.io/Calendario_2026_Free_Bikers_Roma/" class="border border-white/20 text-white px-10 py-4 rounded-full font-bold uppercase tracking-tighter hover:bg-white hover:text-black transition">Torna al Calendario 2026</a>
             </div>
 			<!-- bottone evento -->
@@ -621,113 +621,330 @@
         </div>
     </section> -->
 <!-- Sezione Menù -->
-<section id="menu" class="py-24 bg-black relative">
-    <div class="container mx-auto px-6 max-w-7xl">
-        
-        <!-- Intestazione Sezione -->
-        <div class="text-center mb-16" data-aos="fade-down">
-           	<h4 class="text-3xl md:text-5xl text-amber-500 font-bold text-lg mb-1"><i class="fa-solid fa-utensils mr-2 text-amber-500"  style="padding: 20px;"></i></h4>
-			<h3 class="text-amber-500 font-bold uppercase tracking-[0.3em] mb-2">il ristorante</h3>
-			<h4 class="text-3xl md:text-5xl text-amber-500 font-bold text-lg mb-1">Terrae Eremis</h4>
 
-            <h2 class="text-3xl md:text-5xl  font-black text-white italic uppercase tracking-tighter" style="padding: 10px;">Menù a € 25</h2>
-            <!-- <p class="text-gray-400 mt-4 italic text-lg">Naturalmente possiamo modificare il menù</p> -->
-			<p class="text-gray-300"><strong>Parcheggio moto presso il ristorante</strong></p>
-			<a href="https://maps.app.goo.gl/fGbZsCcd9o6SbQyB6" target="_blank" class="map-btn">
-				<i class="fas fa-location-arrow mr-2"></i> Vai al Ristorante Terrae Eremis
-			</a>
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	/* =========================================
+   SEZIONE RISTORANTE TERRAE EREMIS
+========================================= */
+
+.restaurant-section {
+  padding: 60px 20px;
+  background-color: #1a1a1a; /* Sfondo scuro per contrasto */
+  color: #f5f5f5;
+}
+
+.rest-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Ristorante e Bottone Mappa */
+.rest-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rest-header h2 {
+  font-size: 2.2rem;
+  color: #ffaa00; /* Colore accento: cambialo col tuo colore principale */
+  margin-bottom: 5px;
+  letter-spacing: 1.5px;
+}
+
+.rest-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #ccc;
+}
+
+.map-btn {
+  display: inline-block;
+  background-color: #ffaa00;
+  color: #1a1a1a;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 170, 0, 0.3);
+}
+
+.map-btn:hover {
+  background-color: #ffb732;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 170, 0, 0.5);
+  color: #000;
+}
+
+/* Animazione Icona Mappa */
+.map-icon-anim {
+  animation: bounceMap 2s infinite;
+  margin-right: 8px;
+}
+
+@keyframes bounceMap {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-5px); }
+  60% { transform: translateY(-3px); }
+}
+
+/* Contenitore Cards Affiancate */
+.menus-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Singola Card Menù */
+.menu-card {
+  flex: 1 1 450px;
+  background-color: #242424;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(255, 170, 0, 0.15);
+  border-color: #ffaa00;
+}
+
+.menu-card-header {
+  background-color: #2a2a2a;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 3px solid #ffaa00;
+}
+
+/* Variante per far spiccare la seconda card */
+.menu-card-header.highlight {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a2a0a 100%);
+}
+
+.menu-card-header h4 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu-card-header .price {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffaa00;
+  margin-top: 10px;
+}
+
+.menu-card-header .price small {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: normal;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Lista Portate */
+.menu-items {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+
+.menu-items li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #444;
+  transition: transform 0.3s ease;
+}
+
+.menu-items li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.menu-items li:hover {
+  transform: translateX(8px);
+}
+
+.menu-items li i {
+  font-size: 1.4rem;
+  color: #ffaa00;
+  margin-right: 18px;
+  margin-top: 4px;
+  width: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.menu-items li:hover i {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.menu-items li div strong {
+  display: block;
+  font-size: 1.15rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.menu-items li div p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+/* Responsive per Mobile */
+@media (max-width: 768px) {
+  .menus-wrapper {
+    flex-direction: column;
+  }
+  .menu-card {
+    flex: 1 1 100%;
+  }
+}
+
+</style>
+
+
+
+
+<section id="ristorante-terrae-eremis" class="restaurant-section">
+  <div class="rest-container">
+    
+    <!-- Intestazione e Link Mappa -->
+    <div class="rest-header">
+      <h2><i class="fa-solid fa-utensils"></i><br><strong>IL RISTORANTE</strong></h2>
+      <h3><strong>Terrae Eremis</strong></h3>
+      <a href="https://maps.app.goo.gl/jnTXDVn1sfvhuWVn9" target="_blank" class="map-btn">
+        <i class="fa-solid fa-location-dot map-icon-anim"></i> Vai al Ristorante Terrae Eremis
+      </a>
+    </div>
+
+    <!-- Contenitore dei Menù Affiancati -->
+    <div class="menus-wrapper">
+      
+      <!-- Card Menù 1 (Primo) -->
+      <div class="menu-card">
+        <div class="menu-card-header">
+          <h4><strong>Menù con Primo</strong></h4>
+          <span class="price">€25 <span style="color:#888888;">(€26 con pasta all'uovo)</span></span>
         </div>
-        <div class="text-center mb-16" data-aos="fade-down">
-
-		</div>
-        <!-- Griglia Menù -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- Antipasto -->
-            <div class="moto-card p-6 rounded-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                <div class="absolute top-0 right-0 p-4 opacity-5">
-                    <i class="fas fa-bacon text-8xl text-amber-500"></i>
-                </div>
-                <h4 class="text-white font-black text-2xl italic uppercase mb-1">
-                    <i class="fas fa-bacon mr-2 text-amber-500"></i>Antipasto
-                </h4>
-                <p class="text-amber-500 text-xs font-bold uppercase tracking-widest mb-4">Piatto individuale</p>
-                <ul class="text-gray-300 space-y-3 text-sm relative z-10">
-                    <li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i>Antipasto di salumi è formaggi locali</li>
-                </ul>
+        <ul class="menu-items">
+          <li>
+            <i class="fa-solid fa-cheese"></i>
+            <div>
+              <strong>Antipasto</strong>
+              <p>Selezione di salumi e formaggi locali</p>
             </div>
-
-            <!-- Primo -->
-            <div class="moto-card p-6 rounded-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                <div class="absolute top-0 right-0 p-4 opacity-5">
-                    <i class="fas fa-bowl-food text-8xl text-amber-500"></i>
-                </div>
-                <h4 class="text-white font-black text-2xl italic uppercase mb-1">
-                    <i class="fas fa-plate-wheat mr-2 text-amber-500"></i>Primo
-                </h4>
-                <p class="text-amber-500 text-xs font-bold uppercase tracking-widest mb-4">Servito al piatto</p>
-                <ul class="text-gray-300 space-y-3 text-sm relative z-10">
-                    <li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i><strong>Spaghetti al ragù di agnello</strong></li>
-
-                </ul>
+          </li>
+          <li>
+            <i class="fa-solid fa-bowl-food"></i>
+            <div>
+              <strong>Primo Piatto</strong>
+              <p>Spaghetti al ragù di agnello<br><em>(Opzione: chitarra all'uovo fresca al posto della pasta secca +1€)</em></p>
             </div>
-
-            <!-- Dolce -->
-            <div class="moto-card p-6 rounded-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                <div class="absolute top-0 right-0 p-4 opacity-5">
-                    <i class="fas fa-cheese text-8xl text-amber-500"></i>
-                </div>
-                <h4 class="text-white font-black text-2xl italic uppercase mb-1">
-                    <i class="fas fa-cheese mr-2 text-amber-500"></i>Dolce
-                </h4>
-                <p class="text-amber-500 text-xs font-bold uppercase tracking-widest mb-4">Produzione propria</p>
-                <ul class="text-gray-300 space-y-3 text-sm relative z-10">
-                    <li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i>Dolce crostata alle Ciliegie oppure Cheesecake con topping a scelta,</li>
-                </ul>
+          </li>
+          <li>
+            <i class="fa-solid fa-cake-candles"></i>
+            <div>
+              <strong>Dolce</strong>
+              <p>Crostata alle ciliegie oppure Cheesecake con topping a scelta</p>
             </div>
-
-            <!-- Bevande -->
-            <div class="moto-card p-6 rounded-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-                <div class="absolute top-0 right-0 p-4 opacity-5">
-                    <i class="fas fa-wine-bottle text-8xl text-amber-500"></i>
-                </div>
-                <h4 class="text-white font-black text-2xl italic uppercase mb-1">
-                    <i class="fas fa-wine-glass mr-2 text-amber-500"></i>Bevande
-                </h4>
-                <p class="text-amber-500 text-xs font-bold uppercase tracking-widest mb-4">Incluse nel prezzo</p>
-                <ul class="text-gray-300 space-y-3 text-sm relative z-10">
-                    <li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i>Acqua minerale</li>
-                    <li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i>Vino della casa</li>
-					<li class="flex items-start"><i class="fas fa-check text-amber-500 mt-1 mr-3"></i>Caffè €25</li>
-                </ul>
+          </li>
+          <li>
+            <i class="fa-solid fa-wine-glass"></i>
+            <div>
+              <strong>Bevande</strong>
+              <p>Acqua minerale, vino della casa e caffè</p>
             </div>
+          </li>
 
+        </ul>
+      </div>
+
+      <!-- Card Menù 2 (Secondo) -->
+      <div class="menu-card">
+        <div class="menu-card-header highlight">
+          <h4><strong>Menù con Secondo</strong></h4>
+          <span class="price">€30</span>
         </div>
-
-        <!-- Opzioni Vegetariane (Box Evidenziato) -->
-        <!-- <div class="mt-10 bg-gray-900 border border-gray-800 rounded-xl p-6 md:p-8 shadow-2xl relative overflow-hidden" data-aos="fade-up" data-aos-delay="500">
-            
-            <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
-           
-            <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-               
-                <div class="bg-amber-500/10 p-4 rounded-full flex-shrink-0">
-                    <i class="fas fa-leaf text-amber-500 text-3xl"></i>
-                </div>
-               
-                <div class="flex-1">
-                    <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Opzioni Vegetariane (Su richiesta)</h3>
-                    <p class="text-gray-300 text-base leading-relaxed">
-                        In alternativa al primo piatto di carne, è possibile richiedere una porzione di pasta con 
-                        <span class="text-amber-500 font-bold">sugo di pomodoro semplice</span> oppure con 
-                        <span class="text-amber-500 font-bold">gorgonzola, radicchio e noci</span>.
-                    </p>
-                </div>
+        <ul class="menu-items">
+          <li>
+            <i class="fa-solid fa-cheese"></i>
+            <div>
+              <strong>Antipasto</strong>
+              <p>Selezione di salumi e formaggi locali</p>
             </div>
-        </div> -->
+          </li>
+          <li>
+            <i class="fa-solid fa-drumstick-bite"></i>
+            <div>
+              <strong>Secondo a Scelta</strong>
+              <p>Arista porchetta alle erbe <strong>oppure</strong> coscia di tacchinella ripiena</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-leaf"></i>
+            <div>
+              <strong>Contorno</strong>
+              <p>Patate rosolate al rosmarino</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-cake-candles"></i>
+            <div>
+              <strong>Dolce</strong>
+              <p>Crostata alle ciliegie oppure Cheesecake con topping a scelta</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-wine-glass"></i>
+            <div>
+              <strong>Bevande</strong>
+              <p>Acqua minerale, vino della casa e caffè</p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
     </div>
+  </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -956,6 +1173,7 @@
         </div>
     </section>
 
+
     <!-- Lightbox -->
     <div id="lightbox">
         <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
@@ -971,12 +1189,12 @@
         </div>
         <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[500px]" data-aos="zoom-in">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m48!1m12!1m3!1d379740.97007329186!2d13.148184158603366!3d41.96321295331251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m33!3e0!4m5!1s0x132f7b005e85ac61%3A0x2c3eb903325e92e!2sCaffetteria%20Bistrot%20Barone%2C%20Via%20Tiburtina%2C%201412%2C%2000131%20Roma%20RM!3m2!1d41.9386553!2d12.62849!4m3!3m2!1d42.0579608!2d13.5670203!4m5!1s0x133024b35451c167%3A0x1e02971bdf2acba2!2sCastelvecchio%20Subequo%2C%2067024%20AQ!3m2!1d42.130531399999995!2d13.7306715!4m3!3m2!1d42.1122703!2d13.8786989!4m5!1s0x13304f108adfb2eb%3A0xeedbe3d7a75a72a7!2sEremo%20di%20San%20Bartolomeo%20in%20Legio%2C%20Localit%C3%A0%20Vallone%20di%20S.%20Spirito%2C%2065020%20Roccamorice%20PE!3m2!1d42.1820352!2d14.038968599999999!4m5!1s0x13304f067801712f%3A0xc9430fd571df90ec!2sSentiero%20per%20Eremo%20di%20San%20Bartolomeo%2C%20SP64%2C%2065020%20Roccamorice%20PE!3m2!1d42.1836634!2d14.047889!5e0!3m2!1sit!2sit!4v1772794149584!5m2!1sit!2sit" 
+                src="https://www.google.com/maps/embed?pb=!1m60!1m12!1m3!1d94726.9872484939!2d13.385168300000004!3d42.1027942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m45!3e0!4m5!1s0x132f7b005e85ac61%3A0x2c3eb903325e92e!2sCaffetteria%20Bistrot%20Barone%2C%20Via%20Tiburtina%2C%201412%2C%2000131%20Roma%20RM!3m2!1d41.9386553!2d12.62849!4m3!3m2!1d42.057820899999996!2d13.5670329!4m5!1s0x13303b255e3dec33%3A0x5773ce6fa82afe5d!2sScalo%20Ferroviario%2C%2067020%20AQ!3m2!1d42.143111!2d13.741044899999999!4m5!1s0x13303c06e2905797%3A0x1e9c88c09814c43e!2sRaiano%2C%2067027%20AQ!3m2!1d42.1027743!2d13.8132276!4m3!3m2!1d42.1900735!2d13.8474782!4m5!1s0x13303626dbd06cd9%3A0xa094f9d5b9fb3f0!2sFrancoli%2C%2065028%20PE!3m2!1d42.2224284!2d13.910773899999999!4m5!1s0x13304ec0c87cd45d%3A0xe3bee9cde8831cb8!2sRoccamorice%2C%2065020%20PE!3m2!1d42.2119612!2d14.0252047!4m5!1s0x13304fb312a8bc87%3A0x8ffd6d2754f822b3!2sTerrae%20Eremis%3A%20Ristorante%2C%20Bar%2C%20B%26B%2C%2052MW%2BJ6%2C%2065020%20Roccamorice%20PE!3m2!1d42.1841836!2d14.045566899999999!5e0!3m2!1sit!2sit!4v1773671042629!5m2!1sit!2sit" 
                 width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) brightness(95%);" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
         <div class="mt-8 text-center">
-             <a href="https://maps.app.goo.gl/HhFPRPvGD44qfvxZ9" target="_blank" class="text-amber-500 font-bold underline hover:text-white transition">Apri percorso completo su Google Maps</a>
+             <a href="https://maps.app.goo.gl/nPev9vjj47Xe5Qje8" target="_blank" class="text-amber-500 font-bold underline hover:text-white transition">Apri percorso completo su Google Maps</a>
         </div>
     </section>
 
